@@ -1,6 +1,7 @@
 # Triangle
 Example program for a software testing exercise that focuses on unit testing and
-test effectiveness, using code coverage and mutation analysis.
+test effectiveness. This material is credited to CMPSCI 520 course: https://github.com/LASER-UMASS/cs520.
+If you're interested in the further analysis of state of the art techniques in testing, take the course!
 
 Testing
 -------
