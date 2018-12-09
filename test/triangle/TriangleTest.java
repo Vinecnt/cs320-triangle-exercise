@@ -13,9 +13,13 @@ public class TriangleTest {
 
     @Test
     public void test_triangle() {
+        
+
         Type actual = Triangle.classify(10, 10, 10);
         Type expected = EQUILATERAL;
         assertEquals(actual, expected);
+        
+        
 
         actual = Triangle.classify(100, 100, 100);
         expected = EQUILATERAL;
@@ -49,7 +53,52 @@ public class TriangleTest {
         expected = ISOSCELES;
         assertEquals(actual, expected);
         
-        
+        actual = Triangle.classify(-1, -2, -2);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(1, -2, -2);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(1, 2, -2);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(1, 1, 3);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(2, 2, 4);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(-1, -2, -2);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(2, 5, 2);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(6, 2, 2);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(1, 2, 3);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(1, 3, 2);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        actual = Triangle.classify(3, 2, 1);
+        expected = INVALID;
+        assertEquals(actual, expected);
+
+        Triangle abc = new Triangle();
+        assertEquals(abc,new Triangle());
     }
     
    

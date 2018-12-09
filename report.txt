@@ -1,0 +1,19 @@
+Name: Weihai Chen
+Name: Vicent Tran
+Name: Jonathan Trott
+
+Initital Report:
+Line coverage: 45% 
+Branch Coverage: 23%
+
+Final Reprot:
+Line Coverage: 100%
+Branch Coverage: 100%
+
+To achieve 100% line coverage, we wrote tests that insepct every case
+that the if statement might produce
+
+To achieve 100% Branch coverage, we wrote tests that inspect every single
+possible case that the if statements might encouter
+
+Moreover, we wrote a test to examine if the class was initiated proprly. 
